@@ -1,0 +1,16 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx @tailwindcss/cli -i ./input.css -o ../../css/tailwind.css --watch",
+    "generate": "npx @tailwindcss/cli -i ./input.css -o ../../css/tailwind.minify.css --minify"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "tailwindcss": "^4.1.14"
+  }
+}

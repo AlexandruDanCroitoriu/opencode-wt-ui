@@ -1,0 +1,6 @@
+#### Create Session
+POST http://127.0.0.1:4096/session
+
+
+#### List Session
+GET http://127.0.0.1:4096/session

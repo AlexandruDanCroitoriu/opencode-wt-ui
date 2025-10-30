@@ -1,0 +1,66 @@
+[2025-10-30 01:41:59] [INFO] Starting run...
+[2025-10-30 01:41:59] [INFO] Project root: /home/alex/github-repos/opencode-wt-ui/wt-ui
+[2025-10-30 01:41:59] [INFO] Log file: /home/alex/github-repos/opencode-wt-ui/wt-ui/scripts/output/app/run.log
+[2025-10-30 01:41:59] [INFO] Selected build type: debug
+[2025-10-30 01:41:59] [INFO] Launching debug build using make run
+[100%] Built target app
+Starting Wt server...
+[2025-Oct-30 01:41:59.152] 70526 - [info] "config: reading Wt config file: ../../wt_config.xml (location = './app')"
+[2025-Oct-30 01:41:59.153] 70526 - [info] "WServer/wthttp: initializing built-in wthttpd"
+[2025-Oct-30 01:41:59.156] 70526 - [info] "wthttp: started server: http://0.0.0.0:9020"
+[2025-Oct-30 01:42:00.626] 70526 - [info] "Wt: session created (#sessions = 1)"
+[2025-Oct-30 01:42:00.626] 70526 [/ 61lJ9x9tKh7Sfos6] [info] "WEnvironment: UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[2025-Oct-30 01:42:00.626] 70526 [/ 61lJ9x9tKh7Sfos6] [info] "Wt: signal from dead session, sending reload."
+[2025-Oct-30 01:42:00.627] 70526 - [info] "WebController: Removing session 61lJ9x9tKh7Sfos6"
+[2025-Oct-30 01:42:00.627] 70526 [/ 61lJ9x9tKh7Sfos6] [info] "Wt: session destroyed (#sessions = 0)"
+[2025-Oct-30 01:42:00.627] 70526 - [access] "wthttp: 127.0.0.1   POST /?wtd=gRUwEJ3xIXnXjhaz HTTP/1.1 200 76"
+[2025-Oct-30 01:42:00.627] 70526 - [info] "WebRequest: took 1.624 ms"
+[2025-Oct-30 01:42:00.647] 70526 - [info] "Wt: session created (#sessions = 1)"
+[2025-Oct-30 01:42:00.648] 70526 [/ VoVsYivE6GuIhQD6] [info] "WEnvironment: UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[2025-Oct-30 01:42:00.649] 70526 - [access] "wthttp: 127.0.0.1   GET / HTTP/1.1 200 2180"
+[2025-Oct-30 01:42:00.649] 70526 - [info] "WebRequest: took 1.534 ms"
+[2025-Oct-30 01:42:00.875] 70526 [/ VoVsYivE6GuIhQD6] [info] "Using SQLite database in debug mode"
+Dbo.backend.Sqlite3: begin transaction
+Dbo.backend.Sqlite3: rollback transaction
+[2025-Oct-30 01:42:00.885] 70526 [/ VoVsYivE6GuIhQD6] [info] "Using existing database"
+Dbo.backend.Sqlite3: begin transaction
+Dbo.backend.Sqlite3: select "id", "version", "name" from "permission"  where (name = ?)
+Dbo.backend.Sqlite3: commit transaction
+Dbo.backend.Sqlite3: begin transaction
+Dbo.backend.Sqlite3: select "id", "version", "auth_info_id", "provider", "identity" from "auth_identity"  where (provider = ? AND identity = ?)
+[2025-Oct-30 01:42:00.886] 70526 [/ VoVsYivE6GuIhQD6] [info] "Admin user 'maxuli' already exists, skipping creation."
+Dbo.backend.Sqlite3: commit transaction
+[2025-Oct-30 01:42:00.886] 70526 [/ VoVsYivE6GuIhQD6] [warning] "WApplication: Deploy-path ends with '/', using /?_= for internal paths"
+[2025-Oct-30 01:42:00.888] 70526 - [access] "wthttp: 127.0.0.1   GET /?wtd=VoVsYivE6GuIhQD6&request=style&page=1 HTTP/1.1 200 120"
+[2025-Oct-30 01:42:00.888] 70526 - [info] "WebRequest: took 196.743 ms"
+[2025-Oct-30 01:42:00.893] 70526 - [access] "wthttp: 127.0.0.1   GET /static/css/tailwind.css?v=eIkOi57SabzXRqGv HTTP/1.1 200 27182"
+[2025-Oct-30 01:42:00.901] 70526 - [access] "wthttp: 127.0.0.1   GET /?wtd=VoVsYivE6GuIhQD6&sid=3840250243&webGL=true&scrW=1920&scrH=1080&tz=120&tzS=Europe%2FBucharest&htmlHistory=true&deployPath=%2F&request=script&rand=3566963001 HTTP/1.1 200 18157"
+[2025-Oct-30 01:42:00.901] 70526 - [info] "WebRequest: took 27.065 ms"
+[2025-Oct-30 01:42:01.002] 70526 - [info] "Wt: session created (#sessions = 2)"
+[2025-Oct-30 01:42:01.002] 70526 [/ 83z4sBssJmKzCHsN] [info] "WEnvironment: UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+[2025-Oct-30 01:42:01.003] 70526 - [access] "wthttp: 127.0.0.1   GET / HTTP/1.1 200 2178"
+[2025-Oct-30 01:42:01.003] 70526 - [info] "WebRequest: took 1.191 ms"
+[2025-Oct-30 01:42:01.103] 70526 [/ 83z4sBssJmKzCHsN] [info] "Using SQLite database in debug mode"
+Dbo.backend.Sqlite3: begin transaction
+Dbo.backend.Sqlite3: rollback transaction
+[2025-Oct-30 01:42:01.122] 70526 [/ 83z4sBssJmKzCHsN] [info] "Using existing database"
+Dbo.backend.Sqlite3: begin transaction
+Dbo.backend.Sqlite3: select "id", "version", "name" from "permission"  where (name = ?)
+Dbo.backend.Sqlite3: commit transaction
+Dbo.backend.Sqlite3: begin transaction
+Dbo.backend.Sqlite3: select "id", "version", "auth_info_id", "provider", "identity" from "auth_identity"  where (provider = ? AND identity = ?)
+[2025-Oct-30 01:42:01.122] 70526 [/ 83z4sBssJmKzCHsN] [info] "Admin user 'maxuli' already exists, skipping creation."
+Dbo.backend.Sqlite3: commit transaction
+[2025-Oct-30 01:42:01.122] 70526 [/ 83z4sBssJmKzCHsN] [warning] "WApplication: Deploy-path ends with '/', using /?_= for internal paths"
+[2025-Oct-30 01:42:01.124] 70526 - [access] "wthttp: 127.0.0.1   GET /?wtd=83z4sBssJmKzCHsN&request=style&page=1 HTTP/1.1 200 120"
+[2025-Oct-30 01:42:01.124] 70526 - [info] "WebRequest: took 55.562 ms"
+[2025-Oct-30 01:42:01.128] 70526 - [access] "wthttp: 127.0.0.1   GET /?wtd=83z4sBssJmKzCHsN&sid=628760679&webGL=true&scrW=1920&scrH=1080&tz=120&tzS=Europe%2FBucharest&htmlHistory=true&deployPath=%2F&request=script&rand=2607449107 HTTP/1.1 200 18157"
+[2025-Oct-30 01:42:01.128] 70526 - [info] "WebRequest: took 25.748 ms"
+[2025-Oct-30 01:42:01.129] 70526 - [access] "wthttp: 127.0.0.1   GET /static/css/tailwind.css?v=jUzZkh6Ai8FWQ6h6 HTTP/1.1 200 27182"
+[2025-Oct-30 01:42:01.261] 70526 - [access] "wthttp: 127.0.0.1   POST /?wtd=83z4sBssJmKzCHsN HTTP/1.1 200 7141"
+[2025-Oct-30 01:42:01.261] 70526 - [info] "WebRequest: took 1.055 ms"
+[2025-Oct-30 01:42:02.956] 70526 - [access] "wthttp: 127.0.0.1   POST /?wtd=83z4sBssJmKzCHsN HTTP/1.1 200 47"
+[2025-Oct-30 01:42:02.956] 70526 - [info] "WebRequest: took 1.782 ms"
+[2025-Oct-30 01:42:03.090] 70526 - [access] "wthttp: 127.0.0.1   POST /?wtd=83z4sBssJmKzCHsN HTTP/1.1 200 275"
+[2025-Oct-30 01:42:03.091] 70526 - [info] "WebRequest: took 0.888 ms"
+[2025-10-30 01:42:09] [ERROR] Application exited with code 141

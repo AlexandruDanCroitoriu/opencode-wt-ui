@@ -1,0 +1,22 @@
+[2025-10-30 01:41:52] [INFO] Starting build process...
+[2025-10-30 01:41:52] [INFO] Build type: debug
+[2025-10-30 01:41:52] [INFO] Clean build: false
+[2025-10-30 01:41:52] [INFO] Starting debug build process...
+[2025-10-30 01:41:52] [INFO] Build directory: /home/alex/github-repos/opencode-wt-ui/wt-ui/build/debug
+[2025-10-30 01:41:52] [INFO] Log file: /home/alex/github-repos/opencode-wt-ui/wt-ui/scripts/output/app/build.log
+[2025-10-30 01:41:52] [INFO] Configuring CMake for debug build...
+-- Using the multi-header code from /home/alex/github-repos/opencode-wt-ui/wt-ui/build/debug/_deps/json-src/include/
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/alex/github-repos/opencode-wt-ui/wt-ui/build/debug
+[2025-10-30 01:41:52] [SUCCESS] CMake configuration completed successfully
+[2025-10-30 01:41:52] [INFO] Building with 4 parallel jobs...
+Consolidate compiler generated dependencies of target app
+[100%] Built target app
+[2025-10-30 01:41:52] [SUCCESS] debug build completed successfully!
+[2025-10-30 01:41:52] [INFO] Executable location: /home/alex/github-repos/opencode-wt-ui/wt-ui/build/debug/app
+[2025-10-30 01:41:52] [SUCCESS] Application binary created successfully
+[2025-10-30 01:41:52] [INFO] Binary size: 11M
+[2025-10-30 01:41:52] [SUCCESS] Build completed successfully!
+[2025-10-30 01:41:52] [INFO] You can now run the application using:
+[2025-10-30 01:41:52] [INFO]   ./scripts/app/run.sh --debug

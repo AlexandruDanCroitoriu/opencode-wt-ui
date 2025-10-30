@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Stylus Editor -->
+<messages>
+    <message id="Wt.Auth.template.login-v0">
+        <h2>${tr:Wt.Auth.login-form-title message_path="003-Auth/ovrwt-auth-strings.xml"}</h2>
+        <p>${tr:Wt.Auth.login-form-info message_path="003-Auth/ovrwt-auth-strings.xml"}</p>
+        ${<if:passwords>}
+		<div><label for="${id:user-name}">${user-name-label}</label>
+                <span>${user-name-info class=""}</span>
+                <span>${user-confirm-email class=""}</span>
+                <span>${user-name}</span>
+            </div>
+            <div>
+                <label for="${id:password}">${tr:Wt.Auth.password message_path="003-Auth/ovrwt-auth-strings.xml"}</label>
+                <span>${password-info class=""}</span>
+                <span>${password}</span>
+            </div>
+            <div>
+                <label for="${id:remember-me}">${tr:Wt.Auth.remember-me message_path="003-Auth/ovrwt-auth-strings.xml"}</label>
+                <span>${remember-me-info class=""}</span>
+                <span>${remember-me}</span>
+            </div>
+		${</if:passwords>}
+		${<if:oauth>}
+		<div><h3>Or use:</h3>
+                <span>${icons}</span>
+            </div>
+		${</if:oauth>}
+		<div><span>${login}</span>
+            <span>${lost-password}</span>
+            <span>${sep}</span>
+            <span>${register}</span>
+        </div>
+    </message>
+    <message id="Wt.Auth.template.login-v1">
+        <div class="container mx-auto flex flex-col items-center  my-4">
+            <div class="w-sm space-y-2">
+                <div class="">
+					  <h2>${tr:Wt.Auth.login-form-title message_path="003-Auth/ovrwt-auth-strings.xml"}</h2>
+                    <p>${tr:Wt.Auth.login-form-info message_path="003-Auth/ovrwt-auth-strings.xml"}</p>
+                </div>
+				${<if:passwords>}
+				<div class=""><div class="flex flex-col"><label for="${id:user-name}" class="font-semibold">${user-name-label}</label>
+                            <span class="text-xs ">${user-name-info class=""}</span>
+                        </div>
+                        <span>${user-confirm-email class=""}</span>
+                        <span class="">${user-name}</span>
+                    </div>
+                    <div class="">
+                        <div class="flex flex-col">
+                            <label for="${id:password}" class="font-semibold">${tr:Wt.Auth.password message_path="003-Auth/ovrwt-auth-strings.xml"}</label>
+                            <span class="text-xs ">${password-info class=""}</span>
+                        </div>
+                        <span class="">${password}</span>
+                    </div>
+                    <div class="">
+                        <div class="flex items-center space-x-2">
+                            <label for="${id:remember-me}" class="font-semibold">${tr:Wt.Auth.remember-me message_path="003-Auth/ovrwt-auth-strings.xml"}</label>
+                            <span class="">${remember-me}</span>
+                        </div>
+                        <span class="text-xs ">${remember-me-info class=""}</span>
+                    </div>
+				${</if:passwords>}
+				${<if:oauth>}
+				<div><h3>Or use:</h3>
+                        <span>${icons}</span>
+                    </div>
+				${</if:oauth>}
+				<div><span>${login}</span>
+                    <span>${lost-password}</span>
+                    <span>${sep}</span>
+                    <span>${register}</span>
+                </div>
+            </div>
+        </div>
+    </message>
+</messages>

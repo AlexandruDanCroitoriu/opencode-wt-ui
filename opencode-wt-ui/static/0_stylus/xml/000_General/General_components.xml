@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Stylus Editor -->
+<messages>
+    <message id="combobox.default">appearance-none border px-4 py-2 text-sm focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-75</message>
+    <message id="checkbox.default">mr-2 text-blue-600 dark:text-blue-400</message>
+    <message id="lineedit.default">w-full border px-2 py-2 text-sm focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-75 rounded-md</message>
+    <message id="btn.default">cursor-pointer inline-flex items-center justify-center border whitespace-nowrap px-4 py-2 font-medium text-center transition tracking-whide disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 active:opacity-100 disabled:opacity-75 rounded-md bg-green-600</message>
+    <!-- 
+    <message id="btn.primary" border-primary text-on-primary hover:opacity-75 active:outline-offset-0</message>
+    <message id="btn.secondary" bg-secondary border-secondary text-on-secondary hover:opacity-75 active:outline-offset-0</message>
+    <message id="btn.alternate" border-surface-alt-strong hover:opacity-75 focus-visible:outline-surface-alt active:outline-offset-0</message>
+    <message id="btn.inverse" hover:opacity-75 active:outline-offset-0</message>
+    <message id="btn.info" bg-info border-info text-on-info hover:opacity-75 focus-visible:outline-info active:outline-offset-0</message>
+    <message id="btn.danger" bg-danger border-danger text-on-danger hover:opacity-75 focus-visible:outline-danger active:outline-offset-0</message>
+    <message id="btn.warning" bg-warning border-warning text-on-warning hover:opacity-75 focus-visible:outline-warning active:outline-offset-0</message>
+    <message id="btn.success" bg-success text-on-success hover:opacity-75 focus-visible:outline-success active:outline-offset-0</message>
+    <message id="btn.primary.outline">bg-transparent border-primary text-primary hover:opacity-75 active:outline-offset-0</message>
+    <message id="btn.secondary.outline">bg-transparent border-secondary text-secondary hover:opacity-75 active:outline-offset-0</message>
+    <message id="btn.alternate.outline">bg-transparent text-outline hover:opacity-75 active:outline-offset-0</message>
+    <message id="btn.info.outline">bg-transparent border-info text-info hover:opacity-75 focus-visible:outline-info active:outline-offset-0</message>
+    <message id="btn.danger.outline">bg-transparent border-danger text-danger hover:opacity-75 focus-visible:outline-danger active:outline-offset-0</message>
+    <message id="btn.warning.outline">bg-transparent border-warning text-warning hover:opacity-75 focus-visible:outline-warning active:outline-offset-0</message>
+    <message id="btn.success.outline">bg-transparent hover:opacity-75 focus-visible:outline-success active:outline-offset-0</message>
+    <message id="btn.inverse.outline">bg-transparent hover:opacity-75 active:outline-offset-0</message>
+    <message id="btn.primary.ghost">border-none bg-transparent text-primary hover:opacity-75 active:outline-offset-0</message>
+    <message id="btn.secondary.ghost">border-none bg-transparent text-secondary hover:opacity-75 active:outline-offset-0</message>
+    <message id="btn.alternate.ghost">border-none bg-transparent text-outline hover:opacity-75 active:outline-offset-0</message>
+    <message id="btn.inverse.ghost">border-none bg-transparent hover:opacity-75 active:outline-offset-0</message>
+    <message id="btn.info.ghost">border-none bg-transparent text-info hover:opacity-75 focus-visible:outline-info active:outline-offset-0</message>
+    <message id="btn.danger.ghost">border-none bg-transparent text-danger hover:opacity-75 focus-visible:outline-danger active:outline-offset-0</message>
+    <message id="btn.warning.ghost">border-none bg-transparent text-warning hover:opacity-75 focus-visible:outline-warning active:outline-offset-0</message>
+    <message id="btn.success.ghost">border-none bg-transparent hover:opacity-75 focus-visible:outline-success active:outline-offset-0</message>
+    <message id="btn.primary.with.icon">gap-2 border-primary text-on-primary hover:opacity-75 focus-visible:outline active:outline-offset-0</message>
+    <message id="btn.secondary.with.icon">gap-2 bg-secondary border-secondary text-on-secondary hover:opacity-75 focus-visible:outline active:outline-offset-0</message>
+    <message id="btn.alternate.with.icon">gap-2 border-surface-alt-strong hover:opacity-75 focus-visible:outline focus-visible:outline-surface-alt active:outline-offset-0-strong</message>
+    <message id="btn.inverse.with.icon">gap-2 hover:opacity-75 focus-visible:outline active:outline-offset-0</message>
+    <message id="btn.info.with.icon">gap-2 bg-info border-info text-on-info hover:opacity-75 focus-visible:outline focus-visible:outline-info active:outline-offset-0</message>
+    <message id="btn.danger.with.icon">gap-2 bg-danger border-danger text-on-danger hover:opacity-75 focus-visible:outline focus-visible:outline-danger active:outline-offset-0</message>
+    <message id="btn.warning.with.icon">gap-2 bg-warning border-warning text-on-warning hover:opacity-75 focus-visible:outline focus-visible:outline-warning active:outline-offset-0</message>
+    <message id="btn.success.with.icon">gap-2 bg-success text-on-success hover:opacity-75 focus-visible:outline focus-visible:outline-success active:outline-offset-0</message>
+    <message id="btn.primary.action">aspect-square !p-2 rounded-full border-primary p-2 text-on-primary hover:opacity-75 active:outline-offset-0</message>
+    <message id="btn.secondary.action">aspect-square !p-2 rounded-full border-secondary bg-secondary p-2 text-on-secondary hover:opacity-75 active:outline-offset-0</message>
+    <message id="btn.alternate.action">aspect-square !p-2 rounded-full border-surface-alt p-2-strong hover:opacity-75 focus-visible:outline-surface-alt active:outline-offset-0</message>
+    <message id="btn.inverse.action">aspect-square !p-2 rounded-full p-2 hover:opacity-75 active:outline-offset-0</message>
+    <message id="btn.info.action">aspect-square !p-2 rounded-full border-info bg-info p-2 text-on-info hover:opacity-75 focus-visible:outline-info active:outline-offset-0</message>
+    <message id="btn.danger.action">aspect-square !p-2 rounded-full border-danger bg-danger p-2 text-on-danger hover:opacity-75 focus-visible:outline-danger active:outline-offset-0</message>
+    <message id="btn.warning.action">aspect-square !p-2 rounded-full border-warning bg-warning p-2 text-on-warning hover:opacity-75 focus-visible:outline-warning active:outline-offset-0</message>
+    <message id="btn.success.action">aspect-square !p-2 rounded-full bg-success p-2 text-on-success hover:opacity-75 focus-visible:outline-success active:outline-offset-0</message>
+    <message id="btn.primary.loader">gap-2 border-primary text-on-primary hover:opacity-75 active:outline-offset-0</message>
+    <message id="btn.secondary.loader">gap-2 bg-secondary border-secondary text-on-secondary hover:opacity-75 active:outline-offset-0</message>
+    <message id="btn.alternate.loader">gap-2 border-surface-alt-strong hover:opacity-75 focus-visible:outline-surface-alt active:outline-offset-0</message>
+    <message id="btn.inverse.loader">gap-2 hover:opacity-75 active:outline-offset-0</message>
+    <message id="btn.info.loader">gap-2 bg-info border-info text-on-info hover:opacity-75 focus-visible:outline-info active:outline-offset-0</message>
+    <message id="btn.danger.loader">gap-2 bg-danger border-danger text-on-danger hover:opacity-75 focus-visible:outline-danger active:outline-offset-0</message>
+    <message id="btn.warning.loader">gap-2 bg-warning border-warning text-on-warning hover:opacity-75 focus-visible:outline-warning active:outline-offset-0</message>
+    <message id="btn.success.loader">gap-2 bg-success text-on-success hover:opacity-75 focus-visible:outline-success active:outline-offset-0</message> 
+    -->
+</messages>

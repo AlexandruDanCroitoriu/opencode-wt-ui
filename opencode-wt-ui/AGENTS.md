@@ -1,0 +1,23 @@
+AGENTS.md — Operational Guide for agents in this repo
+
+- Build app: `./scripts/app/build.sh --debug|--release [clean]` (outputs to `build/<type>/`, exports `compile_commands.json`).
+- Run app: `./scripts/app/run.sh --debug|--release` or `make run` from `build/<type>/`.
+- Tailwind CSS: `cd static/0_stylus/tailwind && npm ci && npm run watch` (dev) or `npm run generate` (minified).
+- Tests: No project unit tests yet; when added, run from `build/<type>/`: `ctest` (all), `ctest -N` (list), single test: `ctest -R <name-or-regex> -VV`.
+- Lint/analysis (optional):
+  - Format: use `clang-format` (LLVM style unless `.clang-format` added): e.g. `clang-format -i src/**/*.h src/**/*.cpp`.
+  - Static analysis: `clang-tidy -p build/debug src/001_App/App.cpp` (uses exported compile commands).
+- C++ standard: C++17; compile flags set in `CMakeLists.txt` and build script.
+- Include order: standard library, third-party (`<Wt/...>`, `<nlohmann/json.hpp>`), then project (`"..."`). Use `#pragma once` in headers.
+- Namespaces: do not use `using namespace`; qualify (`Wt::`, `std::`).
+- Types/ownership: prefer references/values; use `std::unique_ptr`/`std::shared_ptr` over owning raw pointers; follow Wt API where it returns raw pointers as non-owning.
+- Naming: Classes `PascalCase`; methods/functions `camelCase`; variables `snake_case`; private members end with `_` (e.g., `authDialog_`). Files match class names where practical.
+- Error handling: check return values; use early returns; throw exceptions for unrecoverable errors; catch at boundaries and log.
+- Logging: use `Wt::log("debug"|"info"|"error")`; guard verbose logs with `#ifdef DEBUG`.
+- DB/transactions: wrap Dbo operations in `Wt::Dbo::Transaction`; commit explicitly when needed; rely on RAII for rollback on scope exit.
+- Concurrency: link with pthreads already configured; avoid shared mutable state; prefer message/signals (`Wt::Signal`) when applicable.
+- Resources/static: Tailwind outputs to `static/css/`; reference `tailwind.css` in debug and `tailwind.minify.css` in release as needed.
+- Build Wt library (optional): `./scripts/libs/wt/build.sh --help` (uses per-config build dirs; not required if Wt is installed system-wide).
+- Single-file compile troubleshooting: ensure `build/<type>/` exists and reconfigure with `clean` when CMake flags change.
+- Cursor/Copilot rules: none detected in this repo; if added (`.cursor/rules/` or `.github/copilot-instructions.md`), mirror their guidance here.
+- Scope: This file applies repo-wide; follow existing directory numbering and module layout (`src/000_*`, etc.).
